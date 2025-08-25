@@ -1,25 +1,19 @@
+---
+layout: null
+title: About
+---
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About • Desmond Rawls</title>
+  <title>{{ page.title }} • Desmond Rawls</title>
   <meta name="description" content="About Desmond Rawls — Android and Desktop developer." />
   <link rel="stylesheet" href="/styles.css" />
   <meta name="color-scheme" content="light dark">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1>About</h1>
-      <nav class="topnav">
-        <a href="/">Apps</a>
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
-        <a href="https://github.com/DarrylClay2005" target="_blank" rel="noopener">GitHub</a>
-      </nav>
-    </div>
-  </header>
+  {% include header.html %}
   <main class="container">
     <section class="card" style="padding: 16px">
       <h2>Hi, I’m Desmond</h2>
@@ -32,12 +26,7 @@
       <p>Highlights include StashOpusPlayer (Android music player with Opus support), Enhanced Image Cropper (desktop photo editor), and EQPad (a themed reading platform). Explore the Apps page for direct downloads.</p>
     </section>
   </main>
-  <footer class="site-footer container">
-    <p>© <span id="year"></span> Desmond Rawls • <a href="https://github.com/DarrylClay2005" target="_blank" rel="noopener">@DarrylClay2005</a> • <a href="/contact.html">Contact</a></p>
-  </footer>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  {% include footer.html %}
 </body>
 </html>
 

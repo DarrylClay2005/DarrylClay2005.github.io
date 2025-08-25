@@ -1,0 +1,13 @@
+<header class="site-header">
+  <div class="container">
+    <h1>{{ page.title | default: site.title }}</h1>
+    {% if page.tagline %}<p class="tagline">{{ page.tagline }}</p>{% endif %}
+    <nav class="topnav">
+      <a href="/">Apps</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+

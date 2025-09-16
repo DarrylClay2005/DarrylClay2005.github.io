@@ -4,27 +4,3 @@ author: Darryl Clay
 github_username: DarrylClay2005
 url: https://DarrylClay2005.github.io
 
-# Jekyll settings
-markdown: kramdown
-highlighter: rouge
-theme: null
-
-# Build settings
-include: ["_includes"]
-exclude: ["README.md", "Gemfile", "Gemfile.lock", "node_modules", "vendor"]
-
-# GitHub API settings for real-time data
-github:
-  repository_name: DarrylClay2005.github.io
-  owner_name: DarrylClay2005
-
-# Plugins
-plugins:
-  - jekyll-github-metadata
-  - jekyll-optional-front-matter
-  - jekyll-readme-index
-  - jekyll-titles-from-headings
-
-# GitHub Pages settings
-safe: true
-

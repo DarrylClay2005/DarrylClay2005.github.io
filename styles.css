@@ -56,3 +56,74 @@ h2 { font-size: 22px; margin: 24px 0 12px; }
 .notes ul { margin: 0; padding-left: 18px; }
 .site-footer { border-top: 1px solid var(--border); margin-top: 24px; color: var(--muted); font-size: 14px; }
 
+/* Real-time GitHub data styles */
+.repo-stats {
+  margin: 8px 0;
+  font-size: 13px;
+}
+
+.stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: var(--muted);
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.release-info {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.release-info strong {
+  color: var(--accent);
+}
+
+.last-commit {
+  margin-top: 8px;
+  opacity: 0.8;
+  font-size: 13px;
+}
+
+.last-commit a {
+  color: var(--accent-2);
+  text-decoration: none;
+}
+
+.last-commit a:hover {
+  text-decoration: underline;
+}
+
+/* Loading animation for real-time data */
+.repo-stats.loading {
+  opacity: 0.5;
+  position: relative;
+}
+
+.repo-stats.loading::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border);
+  border-top: 2px solid var(--accent);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+}
+
+@keyframes spin {
+  0% { transform: translateY(-50%) rotate(0deg); }
+  100% { transform: translateY(-50%) rotate(360deg); }
+}
+

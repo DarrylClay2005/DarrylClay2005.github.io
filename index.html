@@ -2,7 +2,7 @@
 layout: null
 permalink: /
 title: Darryl Clay
-tagline: Android and Desktop apps — direct downloads
+tagline: Android, Desktop, and Web apps
 ---
 <!doctype html>
 <html lang="en">
@@ -10,7 +10,7 @@ tagline: Android and Desktop apps — direct downloads
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ page.title }} • Apps</title>
-  <meta name="description" content="All Android and Desktop apps by Darryl Clay with direct download links." />
+  <meta name="description" content="All Android, Desktop, and Web apps by Darryl Clay with direct download links." />
   <link rel="preconnect" href="https://github.com" crossorigin>
   <link rel="stylesheet" href="/styles.css" />
   <meta name="color-scheme" content="light dark">
@@ -19,6 +19,29 @@ tagline: Android and Desktop apps — direct downloads
   {% include header.html %}
 
   <main class="container">
+    <section>
+      <h2>☁️ Web & Cloud</h2>
+      <div class="grid">
+        <!-- Meme Viewer Pro -->
+        <article class="card">
+          <img src="https://opengraph.githubassets.com/1/DarrylClay2005/meme-viewer-s3" alt="Meme Viewer Pro" />
+          <div class="card-body">
+            <h3>Meme Viewer Pro</h3>
+            <p>Interactive meme viewer with React + Tailwind CSS, deployed on AWS S3 with CloudFront CDN for global delivery.</p>
+            <div class="badges">
+              <span class="badge" style="background: #61dafb;">React</span>
+              <span class="badge" style="background: #38bdf8;">Tailwind</span>
+              <span class="badge" style="background: #ff9900;">AWS</span>
+            </div>
+            <div class="actions">
+              <a class="btn primary" href="http://meme-viewer-desmond-2025.s3-website-us-east-1.amazonaws.com" target="_blank" rel="noopener">Live Demo</a>
+              <a class="btn" href="https://github.com/DarrylClay2005/meme-viewer-s3" target="_blank" rel="noopener">View on GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section>
       <h2>Android</h2>
       <div class="grid">
@@ -170,6 +193,7 @@ tagline: Android and Desktop apps — direct downloads
     <section class="notes">
       <h2>Notes</h2>
       <ul>
+        <li>Web apps are hosted on AWS with global CDN delivery.</li>
         <li>Direct downloads are linked to the latest release assets for each project.</li>
         <li>For Linux, choose AppImage for a portable binary or .deb for Debian/Ubuntu-based distributions.</li>
         <li>If you need Windows builds or other platforms, check the project GitHub links.</li>
@@ -181,4 +205,3 @@ tagline: Android and Desktop apps — direct downloads
   <script src="/assets/js/github-integration.js"></script>
 </body>
 </html>
-
